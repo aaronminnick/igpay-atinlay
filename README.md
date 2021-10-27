@@ -97,7 +97,29 @@ Expected Output: null
 #### function consonantWord()
 > This function accepts a word and returns a Pig Latin word according to the rule for consonants.
 
+Test: "It will return a word starting with a consonant as a word with the consonant moved to the end plus "ay"."
+Code: 
+word = "bananas";
+consonantWord(word);
+Expected Output: "ananasbay"
 
+Test: "It will return a word starting with multiple consonants with that block of consonants at the end of the word plus "ay"."
+Code:
+word = "block";
+consonantWord(word);
+Expected Output: "ockblay"
+
+Test: "It will return null if given a word that does not start with a consonant."
+Code:
+word = "apple";
+consonantWord(word);
+Expected Output: null
+
+Test: "It will return null if not given a string."
+Code:
+word = 1;
+consonantWord(word);
+Expected Output: null
 
 #### function quWord()
 > This function accepts a word and returns a Pig Latin word according to the rule for consonant words including "qu".
