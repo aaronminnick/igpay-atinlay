@@ -19,12 +19,6 @@ word = "word";
 ruleFinder(word);
 Expected Output: 1
 
-Test: "It should return -1 if it is fed a multi-word string."
-Code:
-word = "apple banana";
-ruleFinder(word);
-Expected Output: -1
-
 Test: "It should return -1 if it is given a primitive that is not a string."
 Code:
 word = 1;
@@ -43,9 +37,27 @@ word = "apple";
 ruleFinder(word);
 Expected Output: 1
 
+Test: "It will return 1 for a word consisting only of vowels."
+Code:
+word = "aaa";
+ruleFinder(word);
+Expected Output: 1
+
 Test: "It will return 2 for a word beginning with one or more consonants."
 Code:
 word = "banana";
+ruleFinder(word);
+Expected Output: 2
+
+Test: "It will return 2 for a word consisting of a single consonant."
+Code:
+word = "b";
+ruleFinder(word);
+Expected Output: 2
+
+Test: "It will return 2 for a word consisting of only consonants."
+Code:
+word = "bbb";
 ruleFinder(word);
 Expected Output: 2
 
@@ -62,9 +74,10 @@ ruleFinder(word);
 Expected Output: 2
 
 #### function vowelWord()
-
+ > This function accepts a word and returns a Pig Latin word according to the rule for vowels.
 
 #### function consonantWord()
-
+> This function accepts a word and returns a Pig Latin word according to the rule for consonants.
 
 #### function quWord()
+> This function accepts a word and returns a Pig Latin word according to the rule for consonant words including "qu".
