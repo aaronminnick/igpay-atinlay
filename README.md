@@ -74,10 +74,30 @@ ruleFinder(word);
 Expected Output: 2
 
 #### function vowelWord()
- > This function accepts a word and returns a Pig Latin word according to the rule for vowels.
+> This function accepts a word and returns a Pig Latin word according to the rule for vowels.
+
+Test: "It will return a word with "way" at the end."
+Code: 
+word = "apple";
+vowelWord(word);
+Expected Output: "appleway"
+
+Test: "It will return null if given a word that does not start with a vowel."
+Code:
+word = "bananas";
+vowelWord(word);
+Expected Output: null
+
+Test: "It will return null if not given a string."
+Code:
+word = 1;
+vowelWord(word);
+Expected Output: null
 
 #### function consonantWord()
 > This function accepts a word and returns a Pig Latin word according to the rule for consonants.
+
+
 
 #### function quWord()
 > This function accepts a word and returns a Pig Latin word according to the rule for consonant words including "qu".

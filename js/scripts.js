@@ -8,7 +8,7 @@ function ruleFinder(word) {
   }
 
   word = word.toLowerCase();
-  vowels = ['a', 'e', 'i', 'o', 'u'];
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
 
   if (vowels.includes(word[0])) {
     return 1;
@@ -37,8 +37,15 @@ function ruleFinder(word) {
   return -1;
 }
 
-function vowelWord() {
-
+function vowelWord(word) {
+  if (typeof word !== 'string') {
+    return null;
+  }
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  if (!vowels.includes(word[0])) {
+    return null;
+  }
+  return word.concat("way");
 }
 
 function consonantWord() {
